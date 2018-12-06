@@ -43,47 +43,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Bar.cs" />
-    <Compile Include="Model\Cleaner.cs" />
-    <Compile Include="Model\ClerkKitchen.cs" />
-    <Compile Include="Model\ClerkRoom.cs" />
-    <Compile Include="Model\CookingChief.cs" />
-    <Compile Include="Model\Customer.cs" />
-    <Compile Include="Model\Dish.cs" />
-    <Compile Include="Model\DishWasher.cs" />
-    <Compile Include="Model\FastCustomer.cs" />
-    <Compile Include="Model\Fish.cs" />
-    <Compile Include="Model\HotelMaster.cs" />
-    <Compile Include="Model\ICustomer.cs" />
-    <Compile Include="Model\IMobile.cs" />
-    <Compile Include="Model\IModel.cs" />
-    <Compile Include="Model\Ingredient.cs" />
-    <Compile Include="Model\IngredientFactory.cs" />
-    <Compile Include="Model\IPrepare.cs" />
-    <Compile Include="Model\LaundryWasher.cs" />
-    <Compile Include="Model\Material.cs" />
-    <Compile Include="Model\Meat.cs" />
-    <Compile Include="Model\Menu.cs" />
-    <Compile Include="Model\Observable.cs" />
-    <Compile Include="Model\Observer.cs" />
-    <Compile Include="Model\Order.cs" />
-    <Compile Include="Model\PartChief.cs" />
-    <Compile Include="Model\Pastry.cs" />
-    <Compile Include="Model\People.cs" />
-    <Compile Include="Model\RankChief.cs" />
-    <Compile Include="Model\Recipe.cs" />
-    <Compile Include="Model\ReservedCustomer.cs" />
-    <Compile Include="Model\Sauce.cs" />
-    <Compile Include="Model\Server.cs" />
-    <Compile Include="Model\SlowCustomer.cs" />
-    <Compile Include="Model\Square.cs" />
-    <Compile Include="Model\Table.cs" />
+    <Compile Include="Modele\Bar.cs" />
+    <Compile Include="Modele\Cleaner.cs" />
+    <Compile Include="Modele\ClerkKitchen.cs" />
+    <Compile Include="Modele\ClerkRoom.cs" />
+    <Compile Include="Modele\CookingChief.cs" />
+    <Compile Include="Modele\Customer.cs" />
+    <Compile Include="Modele\Dish.cs" />
+    <Compile Include="Modele\DishWasher.cs" />
+    <Compile Include="Modele\FastCustomer.cs" />
+    <Compile Include="Modele\Fish.cs" />
+    <Compile Include="Modele\HotelMaster.cs" />
+    <Compile Include="Modele\ICustomer.cs" />
+    <Compile Include="Modele\IMobile.cs" />
+    <Compile Include="Modele\Ingredient.cs" />
+    <Compile Include="Modele\IngredientFactory.cs" />
+    <Compile Include="Modele\IPrepare.cs" />
+    <Compile Include="Modele\LaundryWasher.cs" />
+    <Compile Include="Modele\Material.cs" />
+    <Compile Include="Modele\Meat.cs" />
+    <Compile Include="Modele\Menu.cs" />
+    <Compile Include="Modele\Observable.cs" />
+    <Compile Include="Modele\Observer.cs" />
+    <Compile Include="Modele\Order.cs" />
+    <Compile Include="Modele\PartChief.cs" />
+    <Compile Include="Modele\Pastry.cs" />
+    <Compile Include="Modele\People.cs" />
+    <Compile Include="Modele\RankChief.cs" />
+    <Compile Include="Modele\Recipe.cs" />
+    <Compile Include="Modele\ReservedCustomer.cs" />
+    <Compile Include="Modele\Sauce.cs" />
+    <Compile Include="Modele\Server.cs" />
+    <Compile Include="Modele\SlowCustomer.cs" />
+    <Compile Include="Modele\Square.cs" />
+    <Compile Include="Modele\Table.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\View\View.csproj">
+      <Project>{b125df8d-9c68-4e98-a10c-23d11bd46067}</Project>
+      <Name>View</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

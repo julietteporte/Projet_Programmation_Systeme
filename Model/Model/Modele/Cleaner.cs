@@ -5,72 +5,66 @@ using System.Linq;
 using System.Text;
 
 namespace Model{
-    public class CookingChief : People , Observer {
+    public class Cleaner : People , IPrepare, IPrepare, Observer, Observer {
 
-        public CookingChief() {
+        public Cleaner() {
         }
 
-        private static CookingChief uniqueInstance;
 
-        public list<Order> Order;
-
-        public list<Part_chief> PartChieves;
-
-
-
-
-
-
-        private void CookingChief() {
+        /// <summary>
+        /// @return
+        /// </summary>
+        public void CleanKitchen() {
             // TODO implement here
+          
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public static CookingChief getInstance() {
+        public void CleanMaterial() {
             // TODO implement here
-            return null;
+           
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void RemoveOrder() {
+        public void FillDishWasher() {
             // TODO implement here
-            return null;
+           
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void RegroupOrder() {
+        public void FillLaundryWasher() {
             // TODO implement here
-            return null;
+          
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void AddOrder() {
+        public void EmptyDishWasher() {
             // TODO implement here
-            return null;
+           
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void AddPartiChief() {
+        public void EmptyLaundryWasher() {
             // TODO implement here
-            return null;
+            
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void RemovePartChief() {
+        public Material StoreMaterial() {
             // TODO implement here
-            return null;
+           
         }
 
     }

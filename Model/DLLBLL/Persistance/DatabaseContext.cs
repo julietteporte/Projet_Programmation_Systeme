@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 
 namespace Persistance{
@@ -19,16 +20,16 @@ namespace Persistance{
         /// </summary>
         protected void OnConfiguring(DbContextOptionsBuilder optionBuilder) {
             // TODO implement here
-            return null;
+          
         }
 
         /// <summary>
         /// @param ModelBuilder 
         /// @return
         /// </summary>
-        protected void OnModelCreating(ModelBuilder ModelBuilder) {
+        protected void OnModelCreating(ModuleBuilder ModelBuilder) {
             // TODO implement here
-            return null;
+            
         }
 
     }

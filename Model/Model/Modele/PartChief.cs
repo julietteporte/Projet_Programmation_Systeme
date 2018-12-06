@@ -5,25 +5,27 @@ using System.Linq;
 using System.Text;
 
 namespace Model{
-    public class DishWasher : Observable {
+    public abstract class PartChief : People {
 
-        public DishWasher() {
+        public PartChief() {
         }
 
-        public int WashingTime;
+        public ClerkKitchen Clerk;
 
-        public list<Dish> Dishes;
-
-        public int CapacityMax;
-
-        public int DishCount;
-
-
+        public List<Order> Orders = new List<Order>();
 
         /// <summary>
         /// @return
         /// </summary>
-        public Material Wash() {
+        public void OrderClerk() {
+            // TODO implement here
+           
+        }
+
+        /// <summary>
+        /// @return
+        /// </summary>
+        public Dish Cook() {
             // TODO implement here
             return null;
         }
@@ -31,17 +33,17 @@ namespace Model{
         /// <summary>
         /// @return
         /// </summary>
-        public void AddDish() {
+        public void AddOrder() {
             // TODO implement here
-            return null;
+            
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void RemoveDish() {
+        public void RemoveOrder() {
             // TODO implement here
-            return null;
+           
         }
 
     }

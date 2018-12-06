@@ -5,19 +5,32 @@ using System.Linq;
 using System.Text;
 
 namespace Model{
-    public class Cleaner : People , IPrepare, IPrepare, Observer, Observer {
+    public class Bar : Observable, Observer {
 
-        public Cleaner() {
+        private static Bar uniqueInstance;
+
+        public int DirtyDishCount;
+
+        public int ReadyDishCount;
+
+        public int DirtyCapacityMax;
+
+        public int ReadyCapacityMax;
+
+        public List<Dish> DirtyDishes = new List<Dish>();
+
+        public List<Dish> ReadyDishes = new List<Dish>();
+
+        private Bar()
+        {
+            // TODO implement here
         }
-
-
-
 
 
         /// <summary>
         /// @return
         /// </summary>
-        public void CleanKitchen() {
+        public static Bar getInstance() {
             // TODO implement here
             return null;
         }
@@ -25,49 +38,33 @@ namespace Model{
         /// <summary>
         /// @return
         /// </summary>
-        public void CleanMaterial() {
+        public void AddReady() {
             // TODO implement here
-            return null;
+            
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void FillDishWasher() {
+        public void RemoveReady() {
             // TODO implement here
-            return null;
+            
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void FillLaundryWasher() {
+        public void AddDirty()
+        {
             // TODO implement here
-            return null;
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void EmptyDishWasher() {
+        public void RemoveDirty() {
             // TODO implement here
-            return null;
-        }
-
-        /// <summary>
-        /// @return
-        /// </summary>
-        public void EmptyLaundryWasher() {
-            // TODO implement here
-            return null;
-        }
-
-        /// <summary>
-        /// @return
-        /// </summary>
-        public Material StoreMaterial() {
-            // TODO implement here
-            return null;
+            
         }
 
     }

@@ -5,16 +5,18 @@ using System.Linq;
 using System.Text;
 
 namespace Model{
-    public class LaundryWasher : Observable {
+    public class DishWasher : Observable {
 
-        public LaundryWasher() {
+        public DishWasher() {
         }
 
         public int WashingTime;
 
-        public list<material> LaundryCount;
+        public List<Dish> Dishes = new List<Dish>();
 
         public int CapacityMax;
+
+        public int DishCount;
 
 
 
@@ -29,17 +31,17 @@ namespace Model{
         /// <summary>
         /// @return
         /// </summary>
-        public void AddLaundry() {
+        public void AddDish() {
             // TODO implement here
-            return null;
+            
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void RemoveLaundry() {
+        public void RemoveDish() {
             // TODO implement here
-            return null;
+           
         }
 
     }

@@ -5,41 +5,28 @@ using System.Linq;
 using System.Text;
 
 namespace Model{
-    public class Bar : Observable, Observer {
+    public class CookingChief : People , Observer {
 
-        public Bar() {
-        }
+     
+        private static CookingChief uniqueInstance;
 
-        private static Bar uniqueInstance;
+        public List<Order> order = new List<Order>();
 
-        public int DirtyDishCount;
-
-        public int ReadyDishCount;
-
-        public int DirtyCapacityMax;
-
-        public int ReadyCapacityMax;
-
-        public list<Dish> DirtyDishes;
-
-        public list<Dish> ReadyDishes;
+        public List<PartChief> PartChieves = new List<PartChief>();
 
 
 
 
 
 
-
-
-
-        private void Bar() {
+        private CookingChief() {
             // TODO implement here
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public static Bar getInstance() {
+        public static CookingChief getInstance() {
             // TODO implement here
             return null;
         }
@@ -47,33 +34,41 @@ namespace Model{
         /// <summary>
         /// @return
         /// </summary>
-        public void AddReady() {
+        public void RemoveOrder() {
             // TODO implement here
-            return null;
+           
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void RemoveReady() {
+        public void RegroupOrder() {
             // TODO implement here
-            return null;
+           
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void AddDirty() {
+        public void AddOrder() {
             // TODO implement here
-            return null;
+            
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void RemoveDirty() {
+        public void AddPartiChief() {
             // TODO implement here
-            return null;
+           
+        }
+
+        /// <summary>
+        /// @return
+        /// </summary>
+        public void RemovePartChief() {
+            // TODO implement here
+           
         }
 
     }

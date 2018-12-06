@@ -5,11 +5,9 @@ using System.Linq;
 using System.Text;
 
 namespace Model{
-    public interface IModel {
+    public interface Observer : Observable {
 
-
-
-        public void notify();
+        void Update();
 
     }
 }

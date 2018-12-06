@@ -5,18 +5,16 @@ using System.Linq;
 using System.Text;
 
 namespace Model{
-    public class HotelMaster : Personne {
+    public class HotelMaster : People {
 
-        public HotelMaster() {
-        }
-
+      
         private static HotelMaster uniqueInstance;
 
-        public list<Rank_chief> RankChieves;
+        public List<RankChief> RankChieves = new List<RankChief>();
 
-        public list<Customer> WaitingCustomers;
+        public List<Customer> WaitingCustomers = new List<Customer>();
 
-        public list<Customer> BuyingCustomers;
+        public List<Customer> BuyingCustomers = new List<Customer>();
 
         public float Wallet;
 
@@ -25,7 +23,7 @@ namespace Model{
 
 
 
-        private void HotelMaster() {
+        private  HotelMaster() {
             // TODO implement here
         }
 
@@ -42,7 +40,7 @@ namespace Model{
         /// </summary>
         public void Call() {
             // TODO implement here
-            return null;
+          
         }
 
         /// <summary>
@@ -50,7 +48,7 @@ namespace Model{
         /// </summary>
         public void Welcome() {
             // TODO implement here
-            return null;
+           
         }
 
         /// <summary>
@@ -58,7 +56,7 @@ namespace Model{
         /// </summary>
         public void AssignTable() {
             // TODO implement here
-            return null;
+            
         }
 
         /// <summary>
@@ -66,7 +64,7 @@ namespace Model{
         /// </summary>
         public void AddRankChief() {
             // TODO implement here
-            return null;
+          
         }
 
         /// <summary>
@@ -74,7 +72,7 @@ namespace Model{
         /// </summary>
         public void RemoveRankChief() {
             // TODO implement here
-            return null;
+           
         }
 
         /// <summary>
@@ -82,7 +80,7 @@ namespace Model{
         /// </summary>
         public void AddWaitingCustomer() {
             // TODO implement here
-            return null;
+           
         }
 
         /// <summary>
@@ -90,7 +88,7 @@ namespace Model{
         /// </summary>
         public void RemoveWaitingCustomer() {
             // TODO implement here
-            return null;
+            
         }
 
         /// <summary>
@@ -98,7 +96,7 @@ namespace Model{
         /// </summary>
         public void AddBuyingCustomer() {
             // TODO implement here
-            return null;
+           
         }
 
         /// <summary>
@@ -106,7 +104,7 @@ namespace Model{
         /// </summary>
         public void RemoveBuyingCustomer() {
             // TODO implement here
-            return null;
+           
         }
 
         /// <summary>
@@ -114,7 +112,7 @@ namespace Model{
         /// </summary>
         public void CollectMoney() {
             // TODO implement here
-            return null;
+            
         }
 
     }

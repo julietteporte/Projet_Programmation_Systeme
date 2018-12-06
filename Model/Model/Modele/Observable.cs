@@ -8,15 +8,10 @@ namespace Model{
     public interface Observable {
 
 
-
-
-
-
-
         /// <summary>
         /// @param observer
         /// </summary>
-        void Attach(void observer);
+        void Attach(Observer);
 
         /// <summary>
         /// @return

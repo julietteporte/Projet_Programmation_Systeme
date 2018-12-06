@@ -14,18 +14,5 @@ namespace Model{
 
         public Order Order;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 
 namespace Model{
-    public class Meat : PartChief , PartChief {
+    public class Meat : PartChief {
 
         public Meat() {
         }

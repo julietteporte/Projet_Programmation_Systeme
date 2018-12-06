@@ -10,7 +10,7 @@ public interface IObject {
 
     string Form { get; set; }
 
-    Position pos(int;int) ;
+    List<int> position { get; set; }
 
     int Height { get; set; }
 

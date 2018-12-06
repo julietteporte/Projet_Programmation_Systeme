@@ -16,22 +16,9 @@ namespace Model{
 
         public float TotalPrice;
 
-        public list<Recipe> Recipes;
+        public List<Recipe> Recipes = new List<Recipe>();
 
         public Customer Customer;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         /// <summary>
@@ -39,7 +26,7 @@ namespace Model{
         /// </summary>
         public void AddRecipe() {
             // TODO implement here
-            return null;
+            
         }
 
         /// <summary>
@@ -47,7 +34,7 @@ namespace Model{
         /// </summary>
         public void RemoveRecipe() {
             // TODO implement here
-            return null;
+            
         }
 
     }

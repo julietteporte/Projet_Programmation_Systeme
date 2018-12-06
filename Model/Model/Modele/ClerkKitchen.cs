@@ -5,34 +5,44 @@ using System.Linq;
 using System.Text;
 
 namespace Model{
-    public class ClerkRoom : People , IMobile {
+    public class ClerkKitchen : People , IPrepare, IPrepare {
 
-        public ClerkRoom() {
+        public ClerkKitchen() {
         }
+
+        public List<Dish> Dish = new List<Dish>();
 
 
         /// <summary>
         /// @return
         /// </summary>
-        public void HelpServer() {
+        public void RecoverStock() {
             // TODO implement here
-            return null;
+       
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void ServeWater() {
+        public void BringBar() {
             // TODO implement here
-            return null;
+          
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void ServeBread() {
+        public void AddDish() {
             // TODO implement here
-            return null;
+           
+        }
+
+        /// <summary>
+        /// @return
+        /// </summary>
+        public void RemoveDish() {
+            // TODO implement here
+            
         }
 
     }

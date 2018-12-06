@@ -11,7 +11,7 @@ namespace View{
 
         string Form { get; set; }
 
-        Position pos(int;int) ;
+        List<int> position;
 
     }
 }

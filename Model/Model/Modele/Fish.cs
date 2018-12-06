@@ -5,15 +5,10 @@ using System.Linq;
 using System.Text;
 
 namespace Model{
-    public interface Observer : Observable {
+    public class Fish : PartChief {
 
-
-
-
-
-
-
-        public void Update();
+        public Fish() {
+        }
 
     }
 }
