@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6BC93A99-C359-447A-AC54-2FD3DD72D70C}</ProjectGuid>
+    <ProjectGuid>{15150EBE-55E6-42E6-9D1E-BA5D747A9BC5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Model</RootNamespace>
-    <AssemblyName>Model</AssemblyName>
+    <RootNamespace>DLLBLL</RootNamespace>
+    <AssemblyName>DLLBLL</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,47 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Bar.cs" />
-    <Compile Include="Model\Cleaner.cs" />
-    <Compile Include="Model\ClerkKitchen.cs" />
-    <Compile Include="Model\ClerkRoom.cs" />
-    <Compile Include="Model\CookingChief.cs" />
-    <Compile Include="Model\Customer.cs" />
-    <Compile Include="Model\Dish.cs" />
-    <Compile Include="Model\DishWasher.cs" />
-    <Compile Include="Model\FastCustomer.cs" />
-    <Compile Include="Model\Fish.cs" />
-    <Compile Include="Model\HotelMaster.cs" />
-    <Compile Include="Model\ICustomer.cs" />
-    <Compile Include="Model\IMobile.cs" />
-    <Compile Include="Model\IModel.cs" />
-    <Compile Include="Model\Ingredient.cs" />
-    <Compile Include="Model\IngredientFactory.cs" />
-    <Compile Include="Model\IPrepare.cs" />
-    <Compile Include="Model\LaundryWasher.cs" />
-    <Compile Include="Model\Material.cs" />
-    <Compile Include="Model\Meat.cs" />
-    <Compile Include="Model\Menu.cs" />
-    <Compile Include="Model\Observable.cs" />
-    <Compile Include="Model\Observer.cs" />
-    <Compile Include="Model\Order.cs" />
-    <Compile Include="Model\PartChief.cs" />
-    <Compile Include="Model\Pastry.cs" />
-    <Compile Include="Model\People.cs" />
-    <Compile Include="Model\RankChief.cs" />
-    <Compile Include="Model\Recipe.cs" />
-    <Compile Include="Model\ReservedCustomer.cs" />
-    <Compile Include="Model\Sauce.cs" />
-    <Compile Include="Model\Server.cs" />
-    <Compile Include="Model\SlowCustomer.cs" />
-    <Compile Include="Model\Square.cs" />
-    <Compile Include="Model\Table.cs" />
+    <Compile Include="Business\IngredientBusiness.cs" />
+    <Compile Include="Facade.cs" />
+    <Compile Include="Ingredient.cs" />
+    <Compile Include="Mapper\IngredientMapper.cs" />
+    <Compile Include="Persistance\DatabaseContext.cs" />
+    <Compile Include="Persistance\IngredientDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\IngredientService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
